@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .gallery img { 
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            border: 4px solid #333; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            transition: transform 0.2s; 
+        }
+        .gallery img:hover { transform: scale(1.05); }
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Career Options In BCA</h1>
+    
+    <div class="gallery">
+        <a href="Images/aiml.jpg" target="_blank">
+            <img src="Images/aiml.jpg" alt="AI/ML">
+        </a>
+        <a href="Images/cloud _computing.jpg" target="_blank">
+            <img src="Images/cloud _computing.jpg" alt="cloud_computing">
+        </a>
+        <a href="Images/cybersecurity.jpg" target="_blank">
+            <img src="Images/cybersecurity.jpg" alt="cybersecurity">
+        </a>
+        <a href="Images/data_science.jpg" target="_blank">
+            <img src="Images/data_science.jpg" alt="Data_science">
+        </a>
+        <a href="Images/full-stack-development.jpg" target="_blank">
+            <img src="Images/full-stack-development.jpg" alt="full_stack_development">
+        </a>
+        <a href="Images/web-development.jpg" target="_blank">
+            <img src="Images/web-development.jpg" alt="web_development">
+        </a>
+    </div>
+</body>
+</html>
